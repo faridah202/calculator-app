@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
 import { useState } from 'react';
-import { Input } from './components/Button';
 
 
 function App() {
@@ -47,7 +45,7 @@ function evall(e){
       <Button onClick={handleClick} value="." text={'.'}/>
       <Button onClick={handleClick} value="0" text={'0'}/>
       <Button onClick={handleClick} value="/" text={'/'}/>
-      <Button onClick={handleClick} value="x" text={'x'}/>
+      <Button onClick={handleClick} value="*" text={'x'}/>
       </div>
       <div className='flex'>
       <button  onClick={e => setValue('')}
@@ -57,6 +55,7 @@ value="reset"
       className='font-bold bg-blue-600 text-white w-48 h-20 p-5 m-2 text-3xl shadow-md shadow-blue-500/50 rounded-full'>=</button>
       </div>
       </div>
+      
     </div>
   );
 }
